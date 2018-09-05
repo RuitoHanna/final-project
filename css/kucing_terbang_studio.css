@@ -1,0 +1,877 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+.boday {
+  margin:0;
+  padding:0;
+  background:rgb(39, 31, 48);
+  color: #fff;
+}
+
+.p2 {
+  font-family: 'Press Start 2P';
+}
+
+.sticky {
+  position: fixed;
+  background-position: top;
+  top: 0;
+  background-color: #000000;
+  width: 100%;
+  padding-top: 10px;
+}
+
+/*buat loading*/
+.wrapper-dark {
+  position: absolute;
+  top:calc(50% - 0px);
+  left:calc(50% - 0px);
+  transform:translate(-50%,-50%);
+  text-align: center;
+  background-color: rgb(27, 19, 63);
+  padding: 47%;
+  height: 100hv;
+  width: 100wv;
+}
+
+div.spinner {
+  -moz-animation: rotate 10s infinite linear;
+  -webkit-animation: rotate 10s infinite linear;
+  animation: rotate 10s infinite linear;
+  position: relative;
+  display: block;
+  margin: auto;
+  width: 142px;
+  height: 142px;
+}
+div.spinner i {
+  -moz-animation: rotate 3s infinite cubic-bezier(0.09, 0.6, 0.8, 0.03);
+  -webkit-animation: rotate 3s infinite cubic-bezier(0.09, 0.6, 0.8, 0.03);
+  animation: rotate 3s infinite cubic-bezier(0.09, 0.6, 0.8, 0.03);
+  -moz-transform-origin: 50% 100% 0;
+  -webkit-transform-origin: 50% 100% 0;
+  transform-origin: 50% 100% 0;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  border: solid 6px transparent;
+  border-bottom: none;
+}
+div.spinner i:nth-child(1) {
+  -moz-animation-timing-function: cubic-bezier(0.09, 0.3, 0.12, 0.03);
+  -webkit-animation-timing-function: cubic-bezier(0.09, 0.3, 0.12, 0.03);
+  animation-timing-function: cubic-bezier(0.09, 0.3, 0.12, 0.03);
+  width: 44px;
+  height: 22px;
+  margin-top: -22px;
+  margin-left: -22px;
+  border-color: #2172b8;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+}
+div.spinner i:nth-child(2) {
+  -moz-animation-timing-function: cubic-bezier(0.09, 0.6, 0.24, 0.03);
+  -webkit-animation-timing-function: cubic-bezier(0.09, 0.6, 0.24, 0.03);
+  animation-timing-function: cubic-bezier(0.09, 0.6, 0.24, 0.03);
+  width: 58px;
+  height: 29px;
+  margin-top: -29px;
+  margin-left: -29px;
+  border-color: #18a39b;
+  border-top-left-radius: 42px;
+  border-top-right-radius: 42px;
+}
+div.spinner i:nth-child(3) {
+  -moz-animation-timing-function: cubic-bezier(0.09, 0.9, 0.36, 0.03);
+  -webkit-animation-timing-function: cubic-bezier(0.09, 0.9, 0.36, 0.03);
+  animation-timing-function: cubic-bezier(0.09, 0.9, 0.36, 0.03);
+  width: 72px;
+  height: 36px;
+  margin-top: -36px;
+  margin-left: -36px;
+  border-color: #82c545;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+}
+div.spinner i:nth-child(4) {
+  -moz-animation-timing-function: cubic-bezier(0.09, 1.2, 0.48, 0.03);
+  -webkit-animation-timing-function: cubic-bezier(0.09, 1.2, 0.48, 0.03);
+  animation-timing-function: cubic-bezier(0.09, 1.2, 0.48, 0.03);
+  width: 86px;
+  height: 43px;
+  margin-top: -43px;
+  margin-left: -43px;
+  border-color: #f8b739;
+  border-top-left-radius: 54px;
+  border-top-right-radius: 54px;
+}
+div.spinner i:nth-child(5) {
+  -moz-animation-timing-function: cubic-bezier(0.09, 1.5, 0.6, 0.03);
+  -webkit-animation-timing-function: cubic-bezier(0.09, 1.5, 0.6, 0.03);
+  animation-timing-function: cubic-bezier(0.09, 1.5, 0.6, 0.03);
+  width: 100px;
+  height: 50px;
+  margin-top: -50px;
+  margin-left: -50px;
+  border-color: #f06045;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+}
+div.spinner i:nth-child(6) {
+  -moz-animation-timing-function: cubic-bezier(0.09, 1.8, 0.72, 0.03);
+  -webkit-animation-timing-function: cubic-bezier(0.09, 1.8, 0.72, 0.03);
+  animation-timing-function: cubic-bezier(0.09, 1.8, 0.72, 0.03);
+  width: 114px;
+  height: 57px;
+  margin-top: -57px;
+  margin-left: -57px;
+  border-color: #ed2861;
+  border-top-left-radius: 66px;
+  border-top-right-radius: 66px;
+}
+div.spinner i:nth-child(7) {
+  -moz-animation-timing-function: cubic-bezier(0.09, 2.1, 0.84, 0.03);
+  -webkit-animation-timing-function: cubic-bezier(0.09, 2.1, 0.84, 0.03);
+  animation-timing-function: cubic-bezier(0.09, 2.1, 0.84, 0.03);
+  width: 128px;
+  height: 64px;
+  margin-top: -64px;
+  margin-left: -64px;
+  border-color: #c12680;
+  border-top-left-radius: 72px;
+  border-top-right-radius: 72px;
+}
+div.spinner i:nth-child(8) {
+  -moz-animation-timing-function: cubic-bezier(0.09, 2.4, 0.96, 0.03);
+  -webkit-animation-timing-function: cubic-bezier(0.09, 2.4, 0.96, 0.03);
+  animation-timing-function: cubic-bezier(0.09, 2.4, 0.96, 0.03);
+  width: 142px;
+  height: 71px;
+  margin-top: -71px;
+  margin-left: -71px;
+  border-color: #5d3191;
+  border-top-left-radius: 78px;
+  border-top-right-radius: 78px;
+}
+
+@-moz-keyframes rotate {
+  to {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  to {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*header*/
+/*
+Fade content bs-carousel with hero headers
+Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+Image credits: unsplash.com
+*/
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+position: relative;
+height: 700px;
+}
+.fade-carousel .carousel-inner .item {
+height: 700px;
+}
+.fade-carousel .carousel-indicators > li {
+margin: 0 2px;
+background-color: #f39c12;
+border-color: #f39c12;
+opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+width: 10px;
+height: 10px;
+opacity: 1;
+}
+
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.hero {
+position: absolute;
+top: 50%;
+left: 50%;
+z-index: 3;
+color: #fff;
+text-align: center;
+text-transform: uppercase;
+text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+  -webkit-transform: translate3d(-50%,-50%,0);
+     -moz-transform: translate3d(-50%,-50%,0);
+      -ms-transform: translate3d(-50%,-50%,0);
+       -o-transform: translate3d(-50%,-50%,0);
+          transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+font-size: 6em;    
+font-weight: bold;
+margin: 0;
+padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+opacity: 0;
+-webkit-transition: 2s all ease-in-out .1s;
+   -moz-transition: 2s all ease-in-out .1s; 
+    -ms-transition: 2s all ease-in-out .1s; 
+     -o-transition: 2s all ease-in-out .1s; 
+        transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+opacity: 1;
+-webkit-transition: 2s all ease-in-out .1s;
+   -moz-transition: 2s all ease-in-out .1s; 
+    -ms-transition: 2s all ease-in-out .1s; 
+     -o-transition: 2s all ease-in-out .1s; 
+        transition: 2s all ease-in-out .1s;    
+}
+
+
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {padding: 10px 40px;}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+color: #f5f5f5;
+background-color: #1abc9c;
+border-color: #1abc9c;
+outline: none;
+margin: 20px auto;
+}
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+height: 100vh;
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+background-image: url(https://cdnb.artstation.com/p/assets/images/images/003/935/277/large/aiko-san-650bc8226cdfee82e243ef017bbe643e.jpg?1478688456); 
+filter: grayscale(40%);
+}
+.fade-carousel .slides .slide-2 {
+background-image: url(https://pre00.deviantart.net/850e/th/pre/f/2018/091/2/6/hakata_tonkotsu_ramens___minimalist_by_anoanidude-dc7m9oo.png);
+filter: grayscale(40%);
+}
+.fade-carousel .slides .slide-3 {
+background-image: url(https://i.ytimg.com/vi/gjJp0lUVCTs/maxresdefault.jpg);
+filter: grayscale(40%);
+}
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+.hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+.hero h1 { font-size: 4em; }    
+}
+
+/*title*/
+.a {
+  position:absolute;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  width:250px;
+  height:60px;
+  padding:0 1rem;
+  line-height:60px;
+  text-align:center;
+  border:2px solid #fff;
+  font-size:30px;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family:sans-serif;
+  color:#fff;
+  overflow:hidden;
+}
+
+.a-dark {
+  color: black;
+  border:2px solid rgb(0, 0, 0);
+}
+.a span  {
+  display:inline-block;
+  transition:0.5s;
+}
+.a span:nth-child(odd):before {
+  content:attr(data-text);
+  position:absolute;
+  transform:translateY(100%);
+}
+.a span:nth-child(odd){
+  transform:translateY(-100%);
+}
+.a:hover span:nth-child(odd){
+  transform:translateY(0);
+  color:#ff0;
+}
+.a span:nth-child(even):before {
+  content:attr(data-text);
+  position:absolute;
+  transform:translateY(-100%);
+}
+
+.a span:nth-child(even){
+  transform:translateY(100%);
+}
+.a:hover span:nth-child(even){
+  transform:translateY(0);
+  color:#ff0;
+}
+
+/* TEAM */
+.media-carousel 
+{
+  margin-bottom: 0;
+  padding: 0 40px 30px 40px;
+  margin-top: 30px;
+}
+/* Previous button  */
+.media-carousel .carousel-control.left 
+{
+  left: -12px;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 30px
+}
+/* Next button  */
+.media-carousel .carousel-control.right 
+{
+  right: -12px !important;
+  background-image: none;
+  background: none repeat scroll 0 0 #222222;
+  border: 4px solid #FFFFFF;
+  border-radius: 23px 23px 23px 23px;
+  height: 40px;
+  width : 40px;
+  margin-top: 30px
+}
+/* Changes the position of the indicators */
+.media-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the colour of the indicators */
+.media-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+.media-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+.media-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* here is custom styling */
+.web_disigner {
+  background: #43b8e3;
+  min-height: 400px; }
+  .web_disigner .web_disigner_contain {
+    padding: 80px 0px; }
+  .web_disigner .parent_circle {
+    background: #63cdf4 none repeat scroll 0 0;
+    border: 15px solid #30a9d4;
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+    display: table;
+    position: relative; }
+    .web_disigner .parent_circle .parent_circle_contain {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 13px;
+      text-align: center;
+      font-weight: 600; }
+    .web_disigner .parent_circle .child_round_circle {
+      border: 15px solid #63cdf4;
+      border-radius: 50%;
+      height: 120px;
+      left: 125px;
+      position: absolute;
+      top: -25px;
+      width: 120px; }
+    .web_disigner .parent_circle .child_round_circle_img1 {
+      background: url("http://engineersahab.com/images/abhishek.png");
+      background-size: 100%; }
+    .web_disigner .parent_circle .child_round_circle_img2 {
+      background: transparent url("http://engineersahab.com/images/rahul.png") repeat scroll 0 -11px/100% auto; 
+      
+      background-position:top;
+      
+      }
+    .web_disigner .parent_circle .child_round_circle_img3 {
+      background: url("http://engineersahab.com/images/mayur.png");
+      background-size: 100%; }
+    .web_disigner .parent_circle .child_round_circle_img4 {
+      background: url("http://engineersahab.com/images/mohsin.png");
+      background-size: 100%; }
+    .web_disigner .parent_circle .child_round_circle_img5 {
+      background: url("http://imensosoftware.com/wp-content/uploads/2016/01/6.jpg");
+      background-size: 100%; }
+    .web_disigner .parent_circle .child_round_circle_img6 {
+      background: url("http://imensosoftware.com/wp-content/uploads/2016/01/5.jpg");
+      background-size: 100%; }
+
+.padtop30 {
+  padding-top: 30px; }
+  
+  /* here is our responsive css */
+  
+  @media only screen and (max-width: 360px) 
+  {
+      .web_disigner .parent_circle .child_round_circle 
+    {
+    border: 15px solid #63cdf4;
+    border-radius: 50%;
+    height: 100px;
+    left: 100px;
+    position: absolute;
+    top: -38px;
+    width: 100px;
+    }
+    .media-carousel .carousel-control.left{
+    
+    margin-top: 290px;
+   
+}
+.media-carousel .carousel-control.right{
+    
+    margin-top: 290px;
+   
+}
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+
+  }
+  .container .slider {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 20s linear infinite;
+  }
+  .container .slider .slide {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+  .container .slider .slide .caption { 
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    left: 60px;
+    padding: 30px;
+    background-color: rgba(0,0,0,.5);
+    box-sizing:border-box;
+    transition: 5s;
+  }
+  .container .slider .slide .caption h2 { 
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 48px;
+    transition: 5s;
+  }
+  .container .slider .slide .caption p { 
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 18px;
+    transition: 5s;
+  }
+  .container .slider .slide.slide1 {
+    background: url(https://www.planwallpaper.com/static/images/47141475-hd-wallpapers.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .container .slider .slide.slide2 {
+    background: url(https://www.planwallpaper.com/static/images/963840d34c51efe6fbe57749fb434646.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .container .slider .slide.slide3 {
+    background: url(https://www.planwallpaper.com/static/images/HD-Wallpapers-B1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .container .slider .slide.slide4 {
+    background: url(https://www.planwallpaper.com/static/images/beach-cool-wallpaper-hd_1_tKvqLtf.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  @keyframes animate {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .container .slider .slide .caption { 
+      bottom: 20px;
+      right: 20px;
+      left: 20px;
+      padding: 20px;
+    }
+    .container .slider .slide .caption h2 { 
+      margin: 0 0 10px;
+      font-size: 30px;
+    }
+    .container .slider .slide .caption p { 
+      font-size: 16px;
+    }
+  }
+
+/* FontAwesome for working BootSnippet :> */
+
+
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #1f1f1f;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.card-text {
+  color: rgb(255, 255, 255);
+}
+
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #ffee00 !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #ffd000 !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.parallax-one {padding-top: 200px;
+   padding-bottom: 200px; 
+   overflow: hidden;
+    position: relative;
+     width: 100%; 
+     background-image: url(https://art.pixilart.com/c7d33152191a443.gif);
+   background-attachment: fixed; 
+   background-size: cover;
+    -moz-background-size: cover;
+     -webkit-background-size: cover; 
+     background-repeat: no-repeat;
+      background-position: top center;}
+
+.title-arch {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.project {
+width: 100%;
+height: 500px;
+background-image: url('../bahan web/cover/light.jpg');
+background-size: cover;
+background-position: center;
+padding: 0 !important;
+float:left;
+padding: 10px;
+}
+
+.project-2 {
+background-image: url('../bahan web/Cover/ideka.jpg');
+padding: 10px;
+}
+
+.project-3 {
+background-image: url('../bahan web/cover/camera.jpg');
+padding: 10px;
+}
+
+.project-4 {
+background-image: url('../bahan web/cover/scared.png');
+padding: 10px;
+}
+
+.project-hover {
+width: 100%;
+height: 100%;
+color: #fff;
+opacity: 0;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+background-color: rgba(90, 2, 232, 0.7);
+padding: 40% 30px !important;
+}
+
+.project-hover hr {
+height: 30px;
+width: 0;
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+background-color: rgba(255, 255, 255, 1);
+border: 0;
+}
+
+.project-hover a {
+color: rgba(255, 255, 255, 1);
+padding: 2px 22px;
+line-height: 40px;
+border: 2px solid rgba(255, 255, 255, 1);
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.project-hover a:hover {
+border-color: rgba(51, 51, 51, 1);
+color: rgba(51, 51, 51, 1);
+background-color: #FFF;
+}
+
+.project:hover .project-hover {
+opacity: 1;
+}
+
+.project:hover .project-hover hr {
+width: 100%;
+height: 5px;
+}
+
+/*last*/
+.uwu {
+  background-color: #110f11;
+  height: 300px;
+  width: 100%;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
