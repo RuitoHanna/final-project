@@ -1,74 +1,36 @@
-/*
-Theme Name:
-Author: yaminncco
-
-Colors:
-	Body 		  : #868F9B
-	Headers 	: #10161A
-	Primary 	: #6195FF
-	Dark      : #FCFCFF
-	Grey 		  : #F4F4F4 #FAFAFA #EEE
-
-Fonts: Montserrat Varela Round
-
-Table OF Contents
-------------------------------------
-1 > General
-2 > Logo
-3 > Navigation
-4 > Header
-5 > About
-6 > Portfolio
-7 > Services
-8 >  Why choose us
-9 >  Numbers
-10 > Pricing
-11 > Testimonial
-12 > Team
-13 > Blog
-14 > Blog post
-15 > Blog sidebar
-16 > Contact
-17 > Footer
-18 > Responsive
-19 > Owl theme
-20 > Back to top
-21 > Preloader
-
-------------------------------------*/
-
-/*------------------------------------*\
-	General
-\*------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
 
 body {
     margin:0;
     padding:0;
     background:rgb(39, 31, 48);
-    color: #fff;
+    color: white;
+
   }
 
 
 /* -- typography -- */
 
 body {
-    font-family: 'Varela Round', sans-serif;
-    font-size: 16px;
+    font-family: 'Josefin Sans';
+    font-size: 20px;
     line-height: 1.6;
     overflow-x: hidden;
 
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin-top: 0px;
+
+    margin-top: 20px;
     margin-bottom: 20px;
-    color: #10161A;
+
 }
 
 h1 {
     font-size: 54px;
+    font-family: 'Press Start 2P';
+
 }
 
 h2 {
@@ -77,10 +39,12 @@ h2 {
 
 h3 {
     font-size: 21px;
+    font-family: 'Press Start 2P';
 }
 
 h4 {
     font-size: 18px;
+    font-family: 'Press Start 2P';
 }
 
 h5 {
@@ -156,11 +120,24 @@ ul, ol {
 
 
 /*title*/
+p {
+
+    font-family: 'Josefin Sans';
+}
+
+.p2 {
+    font-family: 'Press Start 2P';
+}
+
+.p2 w {
+    color: white
+}
+
 .a {
     position:absolute;
     left: 50%;
     transform:translate(-50%,-50%);
-    width:250px;
+    width:relative;
     height:60px;
     padding:0 1rem;
     line-height:60px;
@@ -172,6 +149,8 @@ ul, ol {
     font-family:sans-serif;
     color:#fff;
     overflow:hidden;
+    font-family: 'Press Start 2P';
+
   }
   
   .a-dark {
@@ -386,12 +365,12 @@ filter: grayscale(40%);
 /* --  Input  -- */
 
 input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], input[type="url"], input[type="tel"], textarea {
-    height: 40px;
+    height: 50px;
     width: 100%;
     border: none;
-	  background: #F4F4F4;
+	background: rgb(255, 255, 255);
     border-bottom: 2px solid #EEE;
-    color: #354052;
+    color: #ffbb00;
     padding: 0px 10px;
     opacity: 0.5;
     -webkit-transition: 0.2s border-color, 0.2s opacity;
@@ -989,7 +968,7 @@ header {
 
 .service:after {
     content: "";
-    background-color: #1C1D21;
+    background-color: rgb(255, 187, 0);
     position: absolute;
     left: 0;
     top: 0;
@@ -1653,7 +1632,6 @@ section .section-title {
 }
 
 .contact-form {
-    text-align: center;
     margin-top: 40px;
 }
 
