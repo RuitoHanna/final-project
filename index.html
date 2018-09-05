@@ -10,7 +10,8 @@
     <link rel="shortcut icon" href="bahan web/logo.png" type="image/x-icon">
 	<title>Kucing Terbang Studio</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 
 	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
 	
@@ -44,7 +45,10 @@
 
 	<!-- Header -->
 	<header id="home">
-			<nav id="nav" class="navbar" style="z-index: 4">
+		<div class="bg-img" style="background-image: url(https://cdnb.artstation.com/p/assets/images/images/003/935/277/large/aiko-san-650bc8226cdfee82e243ef017bbe643e.jpg?1478688456);">
+			<div class="overlay"></div>
+		</div>
+        <nav id="nav" class="navbar" style="z-index: 4">
 					<div class="container">
 		
 						<div class="navbar-header" >
@@ -66,43 +70,99 @@
 		
 						<!--  Main navigation  -->
 						<ul class="main-nav nav navbar-nav navbar-right">
-							<li><a href="#home">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#works">Works</a></li>
-							<li><a href="#team">Team</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li><a href="#home" class="p2">Home</a></li>
+							<li><a href="#about" class="p2">About</a></li>
+							<li><a href="#works" class="p2">Works</a></li>
+                            <li><a href="#team" class="p2">Team</a></li>
+                            <li><a href="#news" class="p2">News</a></li>
+							<li><a href="#contact" class="p2">Contact</a></li>
 						</ul>
 						<!-- /Main navigation -->
 		
 					</div>
 				</nav>
-		
-				<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">	
-						<!-- Wrapper for slides -->
+		<div class="home-wrapper">
+			<div class="container">
+				<div class="row">
 
-						  <div class="carousel-item slides">
-							<div class="slide-3"></div>
-							<div class="hero">        
-							  <hgroup>
-									<img src="bahan web/logo.png" width="100px">
-								  <h1>We are creative, smart, and amazing</h1>        
-								  <h3>Get ready to be amazed</h3>
-							  </hgroup>
-							  <button class="btn btn-hero btn-lg" role="button">See our works</button>
-							</div>
-						  </div>
-						</div> 
-					  </div>
-		<!-- /Background Image -->
-
-		<!-- Nav -->
-		<!-- /Nav -->
-
-		<!-- home wrapper -->
-
+					<!-- home content -->
+					<div class="col-md-10 col-md-offset-1">
+						<div class="home-content">
+                            <h1 style="color: white">We are</h1>
+                            <h1 >
+                                <a style="color: rgb(255, 174, 0)" href="" class="typewrite" data-period="2000" data-type="[  &quot;Creative&quot;, &quot;Smart&quot;, &quot;Amazing&quot;]"><span class="wrap"></span></a>
+                              </h1>
+                              
+                                  <script type="text/javascript">
+    
+                              var TxtType = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+    
+        TxtType.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+    
+            if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+    
+            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    
+            var that = this;
+            var delta = 200 - Math.random() * 100;
+    
+            if (this.isDeleting) { delta /= 2; }
+    
+            if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+            }
+    
+            setTimeout(function() {
+            that.tick();
+            }, delta);
+        };
+    
+        window.onload = function() {
+            var elements = document.getElementsByClassName('typewrite');
+            for (var i=0; i<elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-type');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                  new TxtType(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+            // INJECT CSS
+            var css = document.createElement("style");
+            css.type = "text/css";
+            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+            document.body.appendChild(css);
+        };
+                                  
+                                  </script>
+							<p class="white-text">Get ready to be amazed
+							</p>
+							<button class="main-btn"  style="background-color: black ;"><a href="#works">See our works</a></button>
+						</div>
+					</div>
 					<!-- /home content -->
 
-		<!-- /home wrapper -->
+				</div>
+			</div>
+		</div>
 
 	</header>
 	<!-- /Header -->
@@ -118,8 +178,9 @@
 							<span data-text="T">T</span>
 					</div>
 		<br><br><br>            
-			  <h3 style="padding: 40px; text-align: center; color: white"> A passionate studio that focusing on visual novel
-		</h3>
+              <h2 style="padding: 40px; text-align: center; color: white"> We make the impossible dream become true.<br>
+                We are Kucing Terbang Studio
+		</h2>
 		</div>
 
 
@@ -134,15 +195,18 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">What we offer</h2>
-				</div>
-				<!-- /Section header -->
+                        <div class="a">
+                                <span data-text="W">W</span>
+                                <span data-text="O">O</span>
+                                <span data-text="R">R</span>
+                                <span data-text="K">K</span>
+                                <span data-text="S">S</span>
+                        </div>				</div>
 
-				<!-- service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
-						<i class="fa fa-diamond" style="color: #d6c100"></i>
-						<h3>Visual Novel</h3>
+						<i class="fa fa-diamond" style="color: #d60000"></i>
+						<h3 style="text-align: center">Visual Novel</h3>
 						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
 					</div>
 				</div>
@@ -151,8 +215,8 @@
 				<!-- service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
-						<i class="fa fa-diamond" style="color: #d6c100"></i>
-						<h3>Graphic Design</h3>
+						<i class="fa fa-diamond" style="color: #d60000"></i>
+						<h3 style="text-align: center">Illustration</h3>
 						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
 					</div>
 				</div>
@@ -161,8 +225,8 @@
 				<!-- service -->
 				<div class="col-md-4 col-sm-6">
 					<div class="service">
-						<i class="fa fa-diamond" style="color: #d6c100"></i>
-						<h3>Webcomics</h3>
+						<i class="fa fa-diamond" style="color: #d60000"></i>
+						<h3 style="text-align: center">Webcomics</h3>
 						<p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero.</p>
 					</div>
 				</div>
@@ -177,18 +241,14 @@
 	</div>
 
 	<div class="container-fluid">
-    <center><h4 class="display-3 font-weight-bold">Visual Novel</h4></center>
+    <center><h4 class="display-3 font-weight-bold" style="font-size: 30px">Visual Novel</h4></center>
     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 project wow animated animated4 fadeInLeft">
         <div class="project-hover">
             <h2>Light</h2>
             
             <hr />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
             <a href="#">Download</a>
         </div>
         
@@ -198,11 +258,7 @@
             <h2>Love is Strange</h2>
             <hr />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
             <a href="#">Download</a>
         </div>
         
@@ -212,8 +268,7 @@
             <h2>I C(aught) U</h2>
             <hr />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    tempor incididunt ut labore et dolore magna aliqua.
                     consequat. </p>
             <a href="#">Download</a>
         </div>
@@ -224,9 +279,7 @@
             <h2>W.C.</h2>
             <hr />
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat. </p>
+                    tempor incididunt ut labore et dolore magna aliqua. </p>
             <a href="#">Download</a>
         </div>
     </div>
@@ -238,7 +291,7 @@
 <section>
 
       <div class="container-fluid">
-        <center><h4 class="display-3 font-weight-bold">Webcomic</h4></center>
+        <center><h3 class="display-3 font-weight-bold" style="font-size: 30px">Webcomic</h3></center>
     </div>
     </header>
     <div class="team-section-01">
@@ -255,13 +308,13 @@
                   </div>
                 </div>
               </div>
-              <h5 class="name">Hehe(HERO!)</h5>
+              <h4 class="name" style="color: rgb(250, 162, 0)">Hehe(HERO!)</h4>
               <p class="job">By : M Christopher</p>
             </div>
           </div>
           <div class="col-md-4">
             <div class="team-style-01 text-center section-block-p">
-              <div class="image"><img src="bahan web/cover/komik_hanna.jpg" width="100%" height="350px" alt="">
+              <div class="image"><a href="https://webcomics.co.id/contents_main.php?links_number=73"><img src="bahan web/cover/komik_hanna.jpg" width="100%" height="350px" alt=""></a>
                 <div class="overlay">
                   <div class="cell-vertical-wrapper">
                     <div class="cell-middle">
@@ -271,7 +324,7 @@
                 </div>
               </div>
              
-              <h5 class="name">L.I.S</h5>
+              <h4 class="name" style="color: rgb(255, 111, 142)">L.I.S</h4>
               <p class="job">By : Ruito Hanna</p>
             </div>
           </div>
@@ -282,7 +335,7 @@
                   <div class="cell-vertical-wrapper">
                     <div class="cell-middle">
                      
-              <h5 class="name">Catatan Harian Mahasiswa</h5>
+              <h4 class="name" style="color: rgb(49, 97, 255)">Catatan Harian Mahasiswa</h4>
               <p class="job">By : Daru Ramadinoto</p>
             </div>
           </div>
@@ -292,10 +345,10 @@
 </div>
 </section>
 	<!-- Team -->
-	<div id="team" class="section md-padding">
+	<div id="team">
 
 
-<section id="team" style="background-color: aliceblue">
+<section id="team"  style="background-color: rgb(151, 111, 155)">
                             <div class="a a-dark">
                                         <span data-text="T">T</span>
                                         <span data-text="E">E</span>
@@ -547,7 +600,7 @@
     </section>	<!-- /Team -->
 
 	<!-- Blog -->
-	<div id="blog" class="section md-padding">
+	<div id="news" class="section md-padding" style="background-color: rgb(97, 43, 76)">
 
 		<!-- Container -->
 		<div class="container">
@@ -557,7 +610,12 @@
 
 				<!-- Section header -->
 				<div class="section-header text-center">
-					<h2 class="title">Recents news</h2>
+                        <div class="a">
+                                <span data-text="N">N</span>
+                                <span data-text="E">E</span>
+                                <span data-text="W">W</span>
+                                <span data-text="S">S</span>
+                        </div>
 				</div>
 				<!-- /Section header -->
 
@@ -573,7 +631,7 @@
 								<li><i class="fa fa-clock-o"></i>16 Aug</li>
 								<li><i class="fa fa-comments"></i>66</li>
 							</ul>
-							<h3>[NEW CHAPTER!]</h3>
+                            <p style="color: black ; font-size: 25px">[NEW CHAPTER!]</P>
 							<p style="color: black">Read it at official website webcomics NOW!.</p>
 							<a href="https://webcomics.co.id/contents_main.php?links_number=73">Read more</a>
 						</div>
@@ -593,7 +651,7 @@
 								<li><i class="fa fa-clock-o"></i>27 Aug</li>
 								<li><i class="fa fa-comments"></i>99</li>
 							</ul>
-							<h3>[NEW CHAPTER!]</h3>
+                            <p style="color: black ; font-size: 25px">[NEW CHAPTER!]</p>
 							<p style="color: black">Read it at official website webcomics NOW!.</p>
 							<a href="https://webcomics.co.id/contents_main.php?links_number=73">Read more</a>
 						</div>
@@ -613,7 +671,7 @@
 								<li><i class="fa fa-clock-o"></i>5 Aug</li>
 								<li><i class="fa fa-comments"></i>57</li>
 							</ul>
-							<h3>[NEW CHAPTER!]</h3>
+                            <p style="color: black ; font-size: 25px">[NEW CHAPTER!]</p>
 							<p style="color: black">Read it at official website webcomics NOW!.</p>
 							<a href="https://webcomics.co.id/contents_main.php?links_number=73">Read more</a>
 						</div>
@@ -631,7 +689,7 @@
 	<!-- /Blog -->
 
 	<!-- Contact -->
-	<div id="contact" class="section md-padding" style="background-color: aliceblue">
+	<div id="contact" class="section md-padding" style="background-color: rgb(51, 50, 97)">
 
 		<!-- Container -->
 		<div class="container">
@@ -640,7 +698,7 @@
 			<div class="row">
 
 				<!-- Section-header -->
-						<div class="a a-dark">
+						<div class="a">
 								<span data-text="C">C</span>
 								<span data-text="O">O</span>
 								<span data-text="N">N</span>
